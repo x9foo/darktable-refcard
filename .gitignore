@@ -1,0 +1,11 @@
+# Script generated files
+darktable-refcard*.tex
+
+# LaTeX generated files
+*.log
+*.aux
+*.pdf
+*.out
+
+# Emacs backup files
+*~

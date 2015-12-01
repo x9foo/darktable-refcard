@@ -142,10 +142,8 @@
   \bigskip
 
   \begin{center}
-%    \includegraphics[height=5.5em]{lighttable_view}
     \includegraphics[height=5.5em]{lighttable_view2}
     \qquad
-%    \includegraphics[height=5.5em]{darkroom_view}
     \includegraphics[height=5.5em]{darkroom_view2}
   \end{center}
   
@@ -156,6 +154,13 @@
       c & compress history stack \\
       o & over-/underexposed \\
       \LANGCtrl-e & export \\
+      space & image forward \\
+      backspace & image back \\
+      \mbox{]} & brush larger \\
+      \mbox{[} & brush smaller \\
+      alt-1 & zoom close-up \\
+      alt-2 & zoom fill \\
+      alt-3 & zoom fit \\
       middle-click & zoom 1:1 or 2:1 \\
       mouse wheel & zoom between 1:1 and fit-to-screen \\
       \LANGCtrl-mouse wheel & zoom between 2:1 and 1:10 \\
@@ -172,40 +177,27 @@
       double-click & reset to default \\
     \end{tabularx}}
   
-  \scriptsize
+  \small
 
-  \subsection{modules}
+  \section{modules}
 
-  \subsubsection{basic}
+  \subsection{basic and tone}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{cl} 
-      \includegraphics[height=1em]{colisa} & contrast brightness saturation \\
-      \includegraphics[height=1em]{shadhi} & shadows and highlights \\
-      \includegraphics[height=1em]{clipping} & crop and rotate \\
-      \includegraphics[height=1em]{basecurve} & base curve \\
-      \includegraphics[height=1em]{flip} & orientation \\
-      \includegraphics[height=1em]{exposure} & exposure \\
-      \includegraphics[height=1em]{demosaic} & demosaic \\
+    \begin{tabularx}{\tabwidth}{clcl}
+      \includegraphics[height=1em]{colisa} & contrast brightness saturation & \includegraphics[height=1em]{relight} & fill light \\
+      \includegraphics[height=1em]{shadhi} & shadows and highlights         & \includegraphics[height=1em]{tonecurve} & tone curve \\
+      \includegraphics[height=1em]{clipping} & crop and rotate              & \includegraphics[height=1em]{zonesystem} & zone system \\
+      \includegraphics[height=1em]{basecurve} & base curve                  & \includegraphics[height=1em]{levels} & levels \\
+      \includegraphics[height=1em]{flip} & orientation                      & \includegraphics[height=1em]{template} & local contrast \\
+      \includegraphics[height=1em]{exposure} & exposure                     & \includegraphics[height=1em]{template} & global tonemap \\
+      \includegraphics[height=1em]{demosaic} & demosaic                     & \includegraphics[height=1em]{tonemap} & tone mapping \\
       \includegraphics[height=1em]{highlights} & highlight reconstruction \\
       \includegraphics[height=1em]{temperature} & white balance \\
       \includegraphics[height=1em]{invert} & invert \\
     \end{tabularx}}
   
-  \subsubsection{tone}
-  
-  \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{cl} 
-      \includegraphics[height=1em]{relight} & fill light \\
-      \includegraphics[height=1em]{tonecurve} & tone curve \\
-      \includegraphics[height=1em]{zonesystem} & zone system \\
-      \includegraphics[height=1em]{levels} & levels \\
-      \includegraphics[height=1em]{template} & local contrast \\
-      \includegraphics[height=1em]{template} & global tonemap \\
-      \includegraphics[height=1em]{tonemap} & tone mapping \\
-    \end{tabularx}}
-  
-  \subsubsection{color}
+  \subsection{color}
 
   \colorbox{keycol}{%
     \begin{tabularx}{\tabwidth}{cl} 
@@ -222,48 +214,29 @@
       \includegraphics[height=1em]{profile_gamma} & unbreak input profile \\
     \end{tabularx}}
 
-  \subsubsection{correction}
+  \subsection{correction and effect}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{cl} 
-      \includegraphics[height=1em]{dither} & dithering \\
-      \includegraphics[height=1em]{sharpen} & sharpen \\
-      \includegraphics[height=1em]{atrous} & equalizer \\
-      \includegraphics[height=1em]{nlmeans} & denoise (non-local means) \\
-      \includegraphics[height=1em]{template} & defringe \\
-      \includegraphics[height=1em]{bilateral} & denoise (bilateral filter) \\
-      \includegraphics[height=1em]{lens} & lens correction \\
-      \includegraphics[height=1em]{template} & scale pixels \\
-      \includegraphics[height=1em]{template} & rotate pixels \\
-      \includegraphics[height=1em]{spots} & spot removal \\
-      \includegraphics[height=1em]{template} & denoise (profiled) \\
-      \includegraphics[height=1em]{rawdenoise} & raw denoise \\
-      \includegraphics[height=1em]{hotpixels} & hot pixels \\
-      \includegraphics[height=1em]{cacorrect} & chromatic aberrations \\
-    \end{tabularx}}
-
-  \subsubsection{effect}
-
-  \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{cl} 
-      \includegraphics[height=1em]{watermark} & watermark \\
-      \includegraphics[height=1em]{borders} & framing \\
-      \includegraphics[height=1em]{splittoning} & split toning \\
-      \includegraphics[height=1em]{vignette} & vignetting \\
-      \includegraphics[height=1em]{soften} & soften \\
-      \includegraphics[height=1em]{grain} & grain \\
-      \includegraphics[height=1em]{highpass} & highpass \\
-      \includegraphics[height=1em]{lowpass} & lowpass \\
-      \includegraphics[height=1em]{lowlight} & lowlight vision \\
-      \includegraphics[height=1em]{bloom} & bloom \\
-      \includegraphics[height=1em]{colormapping} & color mapping \\
-      \includegraphics[height=1em]{template} & colorize \\
-      \includegraphics[height=1em]{graduatednd} & graduated \\
+    \begin{tabularx}{\tabwidth}{clcl}
+      \includegraphics[height=1em]{dither} & dithering                      & \includegraphics[height=1em]{watermark} & watermark \\
+      \includegraphics[height=1em]{sharpen} & sharpen                       & \includegraphics[height=1em]{borders} & framing \\
+      \includegraphics[height=1em]{atrous} & equalizer                      & \includegraphics[height=1em]{splittoning} & split toning \\
+      \includegraphics[height=1em]{nlmeans} & denoise (non-local means)     & \includegraphics[height=1em]{vignette} & vignetting \\
+      \includegraphics[height=1em]{template} & defringe                     & \includegraphics[height=1em]{soften} & soften \\
+      \includegraphics[height=1em]{bilateral} & denoise (bilateral filter)  & \includegraphics[height=1em]{grain} & grain \\
+      \includegraphics[height=1em]{lens} & lens correction                  & \includegraphics[height=1em]{highpass} & highpass \\
+      \includegraphics[height=1em]{template} & scale pixels                 & \includegraphics[height=1em]{lowpass} & lowpass \\
+      \includegraphics[height=1em]{template} & rotate pixels                & \includegraphics[height=1em]{lowlight} & lowlight vision \\
+      \includegraphics[height=1em]{spots} & spot removal                    & \includegraphics[height=1em]{bloom} & bloom \\
+      \includegraphics[height=1em]{template} & denoise (profiled)           & \includegraphics[height=1em]{colormapping} & color mapping \\
+      \includegraphics[height=1em]{rawdenoise} & raw denoise                & \includegraphics[height=1em]{template} & colorize \\
+      \includegraphics[height=1em]{hotpixels} & hot pixels                  & \includegraphics[height=1em]{graduatednd} & graduated \\
+      \includegraphics[height=1em]{cacorrect} & chromatic aberrations
     \end{tabularx}}
 
 \end{multicols}
 \end{document}
 
 %%% Local Variables:
-%%% TeX-master: "darktable-refcard-a4paper-english-dark"
+%%% TeX-master: "darktable-refcard-a4paper-english-dark-0.2pre"
 %%% End:

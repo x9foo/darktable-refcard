@@ -9,7 +9,7 @@
   (interactive)
   (save-excursion
     (let* ((text (filter-buffer-substring (region-beginning) (region-end)))
-           (cmd (concat "\\LANG" (replace-regexp-in-string "\s+" "" (capitalize text))))
+           (cmd (concat "\\LANG" (replace-regexp-in-string "+\\|,\\|:\\|/\\|-\\|\s+" "" (capitalize text))))
            (line (concat "\\newcommand{" cmd "}{" text "}\n")))
       (delete-region (region-beginning) (region-end))
       (insert cmd)

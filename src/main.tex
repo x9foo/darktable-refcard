@@ -63,6 +63,8 @@
 \setlength{\columnseprule}{1pt}
 \renewcommand{\columnseprulecolor}{\color{sepcol}}
 
+\newcommand{\tableseparator}{ -- }
+
 \begin{document}
 
 \pagecolor{pagecol}
@@ -80,7 +82,7 @@
   \subsection{\LANGSwitchingViews}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X} 
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       l & \LANGLighttable \\
       d & \LANGDarkroom \\
       t & \LANGCameraTethering \\
@@ -94,7 +96,7 @@
   \subsection{\LANGChangingViews}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X} 
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       f11 & \LANGToggleFullscreen \\
       \LANGEsc & \LANGLeaveFullscreen \\
       \LANGCtrl-h & \LANGToggleHeader \\
@@ -105,7 +107,7 @@
   \section{\LANGLighttable}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X} 
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       0 -- 5 & \LANGRateImageWithStars\ \raisebox{-.15\height}{\includegraphics[height=1em]{star_rating_panel}} \\
       r & \LANGRejectImage \\
       f1 -- f5 & \LANGAssignColorLabel\ \raisebox{-.15\height}{\includegraphics[height=1em]{color_labels_panel}} \\
@@ -124,7 +126,7 @@
   \section{\LANGSlideshow}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X}
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       \LANGLeftClick & \LANGNextImage \\
       \LANGRightClick & \LANGPreviousImage \\
       \LANGSpace & \LANGStartStop \\
@@ -142,7 +144,7 @@
   \section{\LANGDarkroom}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X} 
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       c & \LANGCompressHistoryStack \\
       o & \LANGOverUnderexposed \\
       \LANGCtrl-e & \LANGExport \\
@@ -162,7 +164,7 @@
   \subsection{\LANGSliders}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{ -- }X} 
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
       \LANGLeftClick\ + \LANGDrag & \LANGSetValue \\
       \LANGMouseWheel & \LANGSetValue \\
       \LANGRightClick & \LANGPopUpForMouseControlOrDirectValueEnter \\

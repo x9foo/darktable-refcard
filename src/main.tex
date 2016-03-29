@@ -77,31 +77,6 @@
 %  \raggedcolumns
   \raggedright
 
-  \section{\LANGSwitchingViews}
-
-  \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
-      l & \LANGLighttable \\
-      d & \LANGDarkroom \\
-      t & \LANGCameraTethering \\
-      m & \LANGMap \\
-      s & \LANGSlideshow \\
-      p & \LANGPrint \\
-      . & \LANGSwitchView \\
-      \LANGCtrl-q & \LANGQuitDarktable \\
-    \end{tabularx}}
-  
-  \section{\LANGChangingViews}
-
-  \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
-      f11 & \LANGToggleFullscreen \\
-      \LANGEsc & \LANGLeaveFullscreen \\
-      \LANGCtrl-h & \LANGToggleHeader \\
-      \LANGTab & \LANGToggleSideBorders \\
-      \LANGCtrl-f & \LANGToggleFilmStrip\ \raisebox{-.25\height}{\includegraphics[height=1em]{filmstrip}} \\
-    \end{tabularx}}
-
   \section{\LANGLighttable}
 
   \colorbox{keycol}{%
@@ -130,24 +105,6 @@
       \LANGCtrl-e & \LANGExport 
     \end{tabularx}}
 
-  \section{\LANGSlideshow}
-
-  \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
-      \LANGLeftClick & \LANGNextImage \\
-      \LANGRightClick & \LANGPreviousImage \\
-      \LANGSpace & \LANGStartStop \\
-      \LANGEsc & \LANGExitSlideshow \\
-    \end{tabularx}}
-  
-  \bigskip
-
-  \begin{center}
-    \includegraphics[height=5.5em]{lighttable_view2}
-    \qquad
-    \includegraphics[height=5.5em]{darkroom_view2}
-  \end{center}
-  
   \section{\LANGDarkroom}
 
   \colorbox{keycol}{%
@@ -168,6 +125,45 @@
       \LANGShift-\LANGClick & \LANGExpandModuleKeepPreviousExpanded \\
     \end{tabularx}}
   
+  \section{\LANGViews}
+
+  \colorbox{keycol}{%
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
+      l & \LANGLighttable \\
+      d & \LANGDarkroom \\
+      t & \LANGCameraTethering \\
+      m & \LANGMap \\
+      s & \LANGSlideshow \\
+      p & \LANGPrint \\
+      . & \LANGSwitchView \\
+      \LANGCtrl-q & \LANGQuitDarktable \\
+      f11 & \LANGToggleFullscreen \\
+      \LANGEsc & \LANGLeaveFullscreen \\
+      \LANGCtrl-h & \LANGToggleHeader \\
+      \LANGTab & \LANGToggleSideBorders \\
+      \LANGCtrl-f & \LANGToggleFilmStrip\ \raisebox{-.25\height}{\includegraphics[height=1em]{filmstrip}} \\
+    \end{tabularx}}
+
+
+  \begin{center}
+    \parbox[t]{4.5cm}{
+      \includegraphics[height=20mm]{lighttable_view2}
+      \centering \footnotesize \LANGLighttable}
+    \parbox[t]{4.5cm}{
+      \includegraphics[height=20mm]{darkroom_view2}
+      \centering \footnotesize \LANGDarkroom}
+  \end{center}
+
+  \section{\LANGSlideshow}
+
+  \colorbox{keycol}{%
+    \begin{tabularx}{\tabwidth}{k@{\tableseparator}X}
+      \LANGLeftClick & \LANGNextImage \\
+      \LANGRightClick & \LANGPreviousImage \\
+      \LANGSpace & \LANGStartStop \\
+      \LANGEsc & \LANGExitSlideshow \\
+    \end{tabularx}}
+
   \section{\LANGSliders}
 
   \colorbox{keycol}{%
@@ -177,7 +173,7 @@
       \LANGRightClick & \LANGPopUpForMouseControlOrDirectValueEnter \\
       \LANGDoubleClick & \LANGResetToDefault \\
     \end{tabularx}}
-  
+
   \small
 
   \section{\LANGBasicAndTone}
@@ -191,28 +187,21 @@
       \includegraphics[height=1em]{basecurve} & \LANGBaseCurve                   & \includegraphics[height=1em]{template} & \LANGLocalContrast \\
       \includegraphics[height=1em]{flip} & \LANGOrientation                      & \includegraphics[height=1em]{template} & \LANGGlobalTonemap \\
       \includegraphics[height=1em]{exposure} & \LANGExposure                     & \includegraphics[height=1em]{tonemap} & \LANGToneMapping \\
-      \includegraphics[height=1em]{demosaic} & \LANGDemosaic \\
-      \includegraphics[height=1em]{highlights} & \LANGHighlightReconstruction \\
-      \includegraphics[height=1em]{temperature} & \LANGWhiteBalance \\
-      \includegraphics[height=1em]{invert} & \LANGInvert \\
+      \includegraphics[height=1em]{demosaic} & \LANGDemosaic                     & \includegraphics[height=1em]{temperature} & \LANGWhiteBalance \\
+      \includegraphics[height=1em]{highlights} & \LANGHighlightReconstruction    & \includegraphics[height=1em]{invert} & \LANGInvert \\
       \includegraphics[height=1em]{template} & \LANGRawBlackWhitePoint \\
     \end{tabularx}}
   
   \section{\LANGColor}
 
   \colorbox{keycol}{%
-    \begin{tabularx}{\tabwidth}{cl} 
-      \includegraphics[height=1em]{velvia} & \LANGVelvia \\
-      \includegraphics[height=1em]{channelmixer} & \LANGChannelMixer \\
-      \includegraphics[height=1em]{colorout} & \LANGOutputColorProfile \\
-      \includegraphics[height=1em]{template} & \LANGColorContrast \\
-      \includegraphics[height=1em]{colorcorrection} & \LANGColorCorrection \\
+    \begin{tabularx}{\tabwidth}{clcl}
+      \includegraphics[height=1em]{velvia} & \LANGVelvia                         & \includegraphics[height=1em]{colorzones} & \LANGColorZones \\
+      \includegraphics[height=1em]{channelmixer} & \LANGChannelMixer             & \includegraphics[height=1em]{template} & \LANGColorBalance \\
+      \includegraphics[height=1em]{colorout} & \LANGOutputColorProfile           & \includegraphics[height=1em]{template} & \LANGVibrance \\
+      \includegraphics[height=1em]{template} & \LANGColorContrast                & \includegraphics[height=1em]{colorin} & \LANGInputColorProfile \\
+      \includegraphics[height=1em]{colorcorrection} & \LANGColorCorrection       & \includegraphics[height=1em]{profile_gamma} & \LANGUnbreakInputProfile \\
       \includegraphics[height=1em]{monochrome} & \LANGMonochrome \\
-      \includegraphics[height=1em]{colorzones} & \LANGColorZones \\
-      \includegraphics[height=1em]{template} & \LANGColorBalance \\
-      \includegraphics[height=1em]{template} & \LANGVibrance \\
-      \includegraphics[height=1em]{colorin} & \LANGInputColorProfile \\
-      \includegraphics[height=1em]{profile_gamma} & \LANGUnbreakInputProfile \\
     \end{tabularx}}
 
   \section{\LANGCorrectionAndEffect}

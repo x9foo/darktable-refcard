@@ -21,7 +21,7 @@ Combinations of these are generated so that people can choose their preferred on
 
 # Releases
 
-Pre-built PDF versions of the reference card are availabe under [Releases](https://github.com/x9foo/darktable-refcard/releases).
+Pre-built PDF versions of the reference card are available under [Releases](https://github.com/x9foo/darktable-refcard/releases).
 
 # Building
 

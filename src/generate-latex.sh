@@ -4,7 +4,7 @@ set -e
 
 version='0.4'
 formats='a4paper letter'
-languages='english german french'
+languages='english german french dutch'
 colors='dark bright'
 
 for format in $formats; do

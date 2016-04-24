@@ -1,6 +1,8 @@
 # darktable-refcard
 A reference card for the darktable 2.0 photography workflow application.
 
+![Image of dark card](images/thumb-dark.png) ![Image of bright card](images/thumb-bright.png)
+
 The darktable home is at [http://www.darktable.org/](http://www.darktable.org/ "darktable homepage")
 
 # Variants

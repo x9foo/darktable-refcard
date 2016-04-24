@@ -2,7 +2,7 @@
 
 set -e
 
-version='0.4'
+version='0.5'
 formats='a4paper letter'
 languages='english german french dutch'
 colors='dark bright'

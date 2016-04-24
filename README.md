@@ -15,7 +15,7 @@ Currently supported are:
 
 * Paper size: A4, Letter
 * Color style: bright, dark
-* Language: English, German, French
+* Language: English, German, French, Dutch
 
 Combinations of these are generated so that people can choose their preferred one.
 
